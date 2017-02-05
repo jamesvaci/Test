@@ -15,6 +15,7 @@
   <link href="css/sidebar-collapse.css" rel="stylesheet">
   <link href="css/demo.css" rel="stylesheet">
   <link href="css/ekko-lightbox.css" rel="stylesheet">
+  <link rel="icon" href="pics/logotab.png" >
   <title></title>
 </head>
 <body>
@@ -23,7 +24,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav nav mr-auto mt-2 mt-md-0">
         <li class="nav-item">
-          <a class="nav-link" href="#">Pocetna <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.htm">Pocetna <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="proizvodi.html">Proizvodi</a>
@@ -35,7 +36,7 @@
           <a class="nav-link" href="solidsurface.html">Kerrock</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pitajte.html">Pitajte</a>
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal" data-whatever="">Pitajte</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="akcije.html">Akcije</a>
@@ -55,7 +56,10 @@
           <a class="nav-link" href="#">EN</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">Login</a>
+          <a class="nav-link" href="#">HU</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Uloguj se</a>
         </li>
       </ul>
     </div>
@@ -227,10 +231,10 @@
         <div class="col-4 col-md-4 footerleft col-sm-12">
           <div class="logofooter"><img src="pics/logo.png" style="margin: 15px;"></div>
           <p>Kontakt</p>
-          <p><i class="material-icons">location_on</i> Subotica - Batinska 34, Tel.: 024 456-1187, 456-1186</p>
-          <p><i class="material-icons">location_on</i> Subotica - Banijska 2, Tel.: 024 547-886</p>
-          <p><i class="material-icons">location_on</i> Novi Sad - Rumenički put 11, Tel.: 021 518-092</p>
-          <p><i class="material-icons">location_on</i> Novi Beograd - Zemunska 22, Tel.: 011 612-8-995, 011 612-8-996</p>
+          <a href="https://goo.gl/maps/8joSg6aANoA2"><p><i class="material-icons">location_on</i> Subotica - Batinska 34</a>, Tel.: 024 456-1187, 456-1186</p>
+          <a href="https://goo.gl/maps/8TSqfGDc4a72"><p><i class="material-icons">location_on</i> Subotica - Banijska 2</a>, Tel.: 024 547-886</p>
+          <a href="https://goo.gl/maps/3nczhcrYQZw"><p><i class="material-icons">location_on</i> Novi Sad - Rumenički put 11</a>, Tel.: 021 518-092</p>
+          <a href="https://goo.gl/maps/T5xWrEgnUBz"><p><i class="material-icons">location_on</i> Novi Beograd - Zemunska 22</a>, Tel.: 011 612-8-995, 011 612-8-996</p>
         </div>
         <div class="col-md-2 col-sm-4 paddingtop-bottom">
           <h6 class="heading7">Proizvodi</h6>
@@ -242,7 +246,7 @@
               <a href="kerrock.html">Kerrock</a>
             </li>
             <li>
-              <a href="pitajte.html">Pitajte</a>
+              <a data-toggle="modal" data-target="#exampleModal" data-whatever="">Pitajte</a>
             </li>
             <li>
               <a href="akcije.html">Akcije</a>

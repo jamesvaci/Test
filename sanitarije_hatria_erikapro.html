@@ -15,43 +15,86 @@
   <link href="css/sidebar-collapse.css" rel="stylesheet">
   <link href="css/demo.css" rel="stylesheet">
   <link href="css/ekko-lightbox.css" rel="stylesheet">
+  <link rel="icon" href="pics/logotab.png" >
   <title>Erikapro</title>
 </head>
 <body>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Poruka</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="form-control-label">Ime i prezime:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="form-control-label">Subjekat:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="form-control-label">Poruka:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="color: #000000 !important">Zatvori</button>
+        <button type="button" class="btn btn-primary">Pošalji</button>
+      </div>
+    </div>
+  </div>
+</div>
   <nav class="navbar navbar-toggleable-md navbar-light bg-faded z-depth-5 " >
-    <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right" data-target="#navbarNav" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button> <a class="navbar-brand" href="#"><img src="pics/logo.png" style="height: 70%;"></a>
+    <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right" data-target="#navbarNav" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button> 
+    <a class="navbar-brand" href="#"><img src="pics/logo.png" style="height: 70%;"></a>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav nav justify-content-end ">
+      <ul class="navbar-nav nav mr-auto mt-2 mt-md-0">
         <li class="nav-item">
-          <a class="nav-link" href="#">Pocetna <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.htm">Pocetna <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Proizvodi.htm">Proizvodi</a>
+          <a class="nav-link" href="proizvodi.html">Proizvodi</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Referense.htm">Referense</a>
+          <a class="nav-link" href="referense.html">Referense</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="SolidSurface.htm">Kerrock</a>
+          <a class="nav-link" href="solidsurface.html">Kerrock</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Pitajte.htm">Pitajte</a>
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal" data-whatever="">Pitajte</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Akcije">Akcije</a>
+          <a class="nav-link" href="akcije.html">Akcije</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="Prodavnica.htm">Prodavnica</a>
+          <a class="nav-link disabled" href="#">Prodavnica</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Kontakt">Kontakt</a>
+          <a class="nav-link" href="kontakt.html">Kontakt</a>
         </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
           <a class="nav-link" href="#">SR</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">EN</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">HU</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Uloguj se</a>
+        </li>
+        </ul>
       </ul>
     </div>
   </nav>
@@ -136,76 +179,6 @@
       <li class="nav-item">
         <a class="nav-link nav-hoverable" href="index.htm" style="color: #fff">Namastaj Kupatila <span class="sr-only">(current)</span></a>
       </li>
-<!--       <li class="nav-item">
-        <a class="nav-link dropdown-toggle nav-hoverable" href="index.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #fff">
-          Namestaj Kupatila
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="alfa55.html">Alfa 55</a>
-          <a class="dropdown-item" href="alfanew55.html">Alfa New 55</a>
-          <a class="dropdown-item" href="ananew120.html">Ana New 120</a>
-          <a class="dropdown-item" href="anna120.html">Anna 120</a>
-          <a class="dropdown-item" href="aqua60.html">Aqua 60-80-90-100-120</a>
-          <a class="dropdown-item" href="aria60.html">Aria 60</a>
-          <a class="dropdown-item" href="art40.html">Art 40x20</a>
-          <a class="dropdown-item" href="bane90.html">Bane 90</a>
-          <a class="dropdown-item" href="betanew65.html">Beta New 65</a>
-          <a class="dropdown-item" href="branka70.html">Branka 70</a>
-          <a class="dropdown-item" href="country82.html">Country 82</a>
-          <a class="dropdown-item" href="dea60.html">Dea 60</a>
-          <a class="dropdown-item" href="dea60p.html">Dea 60 P-Polica</a>
-          <a class="dropdown-item" href="dea60v.html">Dea 60 V</a>
-          <a class="dropdown-item" href="ego1.html">EGO</a>
-          <a class="dropdown-item" href="fantast86.html">Fantast 86</a>
-          <a class="dropdown-item" href="gama75.html">Gama 75</a>
-          <a class="dropdown-item" href="gamanew75.html">Gama New 75</a>
-          <a class="dropdown-item" href="golf60.html">Golf 60-80-90-100-120</a>
-          <a class="dropdown-item" href="gracijaextra140.html">Gracija Extra 140</a>
-          <a class="dropdown-item" href="image90.html">Image 90</a>
-          <a class="dropdown-item" href="jednokrilna90.html">Jednokrilna V. Ormaric 90-60</a>
-          <a class="dropdown-item" href="lea50.html">Lea 50</a>
-          <a class="dropdown-item" href="leon60.html">Leon 60</a>
-          <a class="dropdown-item" href="linea61.html">Linea 61</a>
-          <a class="dropdown-item" href="lorena90.html">Lorena 90</a>
-          <a class="dropdown-item" href="lorenanew60.html">Lorena new 60</a> 
-          <a class="dropdown-item" href="mark.html">MARK</a>
-          <a class="dropdown-item" href="mia55.html">Mia 55-65-75</a>
-          <a class="dropdown-item" href="milano120.html">Milano 120</a>
-          <a class="dropdown-item" href="milano65.html">Milano 65-75</a>
-          <a class="dropdown-item" href="milano90.html">Milano 90</a>
-          <a class="dropdown-item" href="milena55.html">Milena 55</a>
-          <a class="dropdown-item" href="mirror60.html">Mirror 60-65-75-80-90-100-120</a>
-          <a class="dropdown-item" href="nefertiti90.html">Nefertiti 90</a>
-          <a class="dropdown-item" href="nefertitinew90.html">Nefertiti New 90</a>
-          <a class="dropdown-item" href="new60.html">New 60-120</a>
-          <a class="dropdown-item" href="nika72.html">Nika 72/60</a>
-          <a class="dropdown-item" href="nina100.html">Nina 100</a>
-          <a class="dropdown-item" href="ogledaloprestige.html">Ogledalo PRESTIGE 60,70,80,90,100,120</a>
-          <a class="dropdown-item" href="opera80.html">Opera 80</a>
-          <a class="dropdown-item" href="prestige800.html">Prestige 800</a>
-          <a class="dropdown-item" href="prestige900.html">Prestige 900</a>
-          <a class="dropdown-item" href="prestige1000.html">Prestige 1000</a>
-          <a class="dropdown-item" href="prestige1600.html">Prestige 1600</a>
-          <a class="dropdown-item" href="prestige1850.html">Prestige 1850</a>
-          <a class="dropdown-item" href="queen.html">Queen</a>
-          <a class="dropdown-item" href="rasveta.html">Rasveta za kupatilski namestaj</a>
-          <a class="dropdown-item" href="samba.html">Samba 120</a>
-          <a class="dropdown-item" href="vertikaleIV.html">Skracene vertikale GE IV</a>
-          <a class="dropdown-item" href="vertikaleIII.html">Skracene vertikale GE III</a>
-          <a class="dropdown-item" href="stela60.html">Stela 60</a>
-          <a class="dropdown-item" href="tango90.html">Tango 90</a>
-          <a class="dropdown-item" href="twist.html">Twist</a>
-          <a class="dropdown-item" href="venecija60.html">Venecija 60</a>
-          <a class="dropdown-item" href="vera65.html">Vera 65</a>
-          <a class="dropdown-item" href="viktoria60.html">Viktoria 60</a>
-          <a class="dropdown-item" href="viktoria60v.html">Viktoria 60 V</a>
-          <a class="dropdown-item" href="vip60.html">Vip 60</a>
-          <a class="dropdown-item" href="viseciormar70.html">Viseci ormaric 70</a>
-          <a class="dropdown-item" href="viseciormar90.html">Viseci ormaric 90</a>
-          <a class="dropdown-item" href="wcdaska.html">WC daske</a>
-          <a class="dropdown-item" href="wcsarka.html">WC Sarka za medijapan dasku</a>
-        </div>
-      </li> -->
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle nav-hoverable" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #fff">
           AquaHome Oprema za kupatilo
@@ -264,20 +237,20 @@
           </div>
 			  <div class="row">
 				<div class="col-md-4 col-sm-8 view hoverable">
-				  <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics/aquahome_oprema/sanitarije/hatria/erikapro/hatria_erika1.jpg"><img class="img-fluid" src="pics/aquahome_oprema/sanitarije/hatria/erikapro/hatria_erika1.jpg" width="100%"></a>
+				  <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics/aquahome/sanitarije/hatria/erikapro/hatria_erika1.jpg"><img class="img-fluid" src="pics/aquahome/sanitarije/hatria/erikapro/hatria_erika1.jpg" width="100%"></a>
 				</div>
 				<div class="col-md-4 col-sm-8 view hoverable">
-				  <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics/aquahome_oprema/sanitarije/hatria/erikapro/hatria_erika2.jpg"><img class="img-fluid" src="pics/aquahome_oprema/sanitarije/hatria/erikapro/hatria_erika2.jpg" width="100%"></a>
+				  <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics/aquahome/sanitarije/hatria/erikapro/hatria_erika2.jpg"><img class="img-fluid" src="pics/aquahome/sanitarije/hatria/erikapro/hatria_erika2.jpg" width="100%"></a>
 				</div>
 				<div class="col-md-4 col-sm-8 view hoverable">
-				  <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics/aquahome_oprema/sanitarije/hatria/erikapro/hatria_erika3.jpg"><img class="img-fluid" src="pics/aquahome_oprema/sanitarije/hatria/erikapro/hatria_erika3.jpg" width="100%"></a>
+				  <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics/aquahome/sanitarije/hatria/erikapro/hatria_erika3.jpg"><img class="img-fluid" src="pics/aquahome/sanitarije/hatria/erikapro/hatria_erika3.jpg" width="100%"></a>
 				</div>
 			  </div>
 			  <div class="row">
 				<div class="col-md-2 col-sm-8 view">
 				</div>
 				<div class="col-md-8 col-sm-8 view hoverable">
-				  <a class="col-sm-8" data-gallery="example-gallery" data-toggle="lightbox" href="pics/aquahome_oprema/sanitarije/hatria/erikapro/hatria_erika4.jpg"><img class="img-fluid" src="pics/aquahome_oprema/sanitarije/hatria/erikapro/hatria_erika4.jpg" width="100%"></a>
+				  <a class="col-sm-8" data-gallery="example-gallery" data-toggle="lightbox" href="pics/aquahome/sanitarije/hatria/erikapro/hatria_erika4.jpg"><img class="img-fluid" src="pics/aquahome/sanitarije/hatria/erikapro/hatria_erika4.jpg" width="100%"></a>
 				</div>
 				<div class="col-md-2 col-sm-8 view">
 				</div>
@@ -291,28 +264,28 @@
         <div class="col-4 col-md-4 footerleft col-sm-12">
           <div class="logofooter"><img src="pics/logo.png" style="margin: 15px;"></div>
           <p>Kontakt</p>
-          <p><i class="fa fa-map-pin"></i> Subotica - Batinska 34, Tel.: 024 456-1187, 456-1186</p>
-          <p><i class="fa fa-map-pin"></i> Subotica - Banijska 2, Tel.: 024 547-886</p>
-          <p><i class="fa fa-map-pin"></i> Novi Sad - Rumenički put 11, Tel.: 021 518-092</p>
-          <p><i class="fa fa-map-pin"></i> Novi Beograd - Zemunska 22, Tel.: 011 612-8-995, 011 612-8-996</p>
+<a href="https://goo.gl/maps/8joSg6aANoA2"><p><i class="material-icons">location_on</i> Subotica - Batinska 34</a>, Tel.: 024 456-1187, 456-1186</p>
+          <a href="https://goo.gl/maps/8TSqfGDc4a72"><p><i class="material-icons">location_on</i> Subotica - Banijska 2</a>, Tel.: 024 547-886</p>
+          <a href="https://goo.gl/maps/3nczhcrYQZw"><p><i class="material-icons">location_on</i> Novi Sad - Rumenički put 11</a>, Tel.: 021 518-092</p>
+          <a href="https://goo.gl/maps/T5xWrEgnUBz"><p><i class="material-icons">location_on</i> Novi Beograd - Zemunska 22</a>, Tel.: 011 612-8-995, 011 612-8-996</p>
         </div>
         <div class="col-md-2 col-sm-4 paddingtop-bottom">
           <h6 class="heading7">Proizvodi</h6>
           <ul class="footer-ul">
             <li>
-              <a href="#">Referense</a>
+              <a href="referense.html">Referense</a>
             </li>
             <li>
-              <a href="#">Kerrock</a>
+              <a href="kerrock.html">Kerrock</a>
             </li>
             <li>
-              <a href="#">Pitajte</a>
+              <a data-toggle="modal" data-target="#exampleModal" data-whatever="">Pitajte</a>
             </li>
             <li>
-              <a href="#">Akcije</a>
+              <a href="akcije.html">Akcije</a>
             </li>
             <li>
-              <a href="#">Prodavnica</a>
+              <a href="prodavnica.html">Prodavnica</a>
             </li>
           </ul>
         </div>
@@ -363,7 +336,20 @@
                       $(this).addClass('selected');
 
                     });
-                  });
+    });
+
+
+    // pitajte
+
+    $('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget)
+  var recipient = button.data('whatever') 
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + recipient)
+  modal.find('.modal-body input').val(recipient)
+})
+
+
 
                   // delegate calls to data-toggle="lightbox"
                   $(document).on('click', '[data-toggle="lightbox"]:not([data-gallery="navigateTo"])', function(event) {

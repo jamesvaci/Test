@@ -15,9 +15,42 @@
   <link href="css/sidebar-collapse.css" rel="stylesheet">
   <link href="css/demo.css" rel="stylesheet">
   <link href="css/ekko-lightbox.css" rel="stylesheet">
-  <title></title>
+  <link rel="icon" href="pics/logotab.png" >
+  <title>Viktorija 60</title>
 </head>
 <body>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Poruka</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="form-control-label">Ime i prezime:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="form-control-label">Subjekat:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="form-control-label">Poruka:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="color: #000000 !important">Zatvori</button>
+        <button type="button" class="btn btn-primary">Pošalji</button>
+      </div>
+    </div>
+  </div>
+</div>
   <nav class="navbar navbar-toggleable-md navbar-light bg-faded z-depth-5 " >
     <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right" data-target="#navbarNav" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button> <a class="navbar-brand" href="#"><img src="pics/logo.png" style="height: 70%;"></a>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -35,7 +68,7 @@
           <a class="nav-link" href="solidsurface.html">Kerrock</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pitajte.html">Pitajte</a>
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal" data-whatever="">Pitajte</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="akcije.html">Akcije</a>
@@ -296,7 +329,7 @@
               <a href="kerrock.html">Kerrock</a>
             </li>
             <li>
-              <a href="pitajte.html">Pitajte</a>
+              <a data-toggle="modal" data-target="#exampleModal" data-whatever="">Pitajte</a>
             </li>
             <li>
               <a href="akcije.html">Akcije</a>
@@ -354,7 +387,20 @@
                       $(this).addClass('selected');
 
                     });
-                  });
+    });
+
+
+    // pitajte
+
+    $('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget)
+  var recipient = button.data('whatever') 
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + recipient)
+  modal.find('.modal-body input').val(recipient)
+})
+
+
 
                   // delegate calls to data-toggle="lightbox"
                   $(document).on('click', '[data-toggle="lightbox"]:not([data-gallery="navigateTo"])', function(event) {

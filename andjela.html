@@ -15,15 +15,48 @@
   <link href="css/sidebar-collapse.css" rel="stylesheet">
   <link href="css/demo.css" rel="stylesheet">
   <link href="css/ekko-lightbox.css" rel="stylesheet">
-  <title></title>
+  <link rel="icon" href="pics/logotab.png" >
+  <title>Andjela</title>
 </head>
 <body>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Poruka</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="form-control-label">Ime i prezime:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="form-control-label">Subjekat:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="form-control-label">Poruka:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="color: #000000 !important">Zatvori</button>
+        <button type="button" class="btn btn-primary">Pošalji</button>
+      </div>
+    </div>
+  </div>
+</div>
   <nav class="navbar navbar-toggleable-md navbar-light bg-faded z-depth-5 " >
     <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right" data-target="#navbarNav" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button> <a class="navbar-brand" href="#"><img src="pics/logo.png" style="height: 70%;"></a>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav nav justify-content-end ">
         <li class="nav-item">
-          <a class="nav-link" href="#">Pocetna <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.htm">Pocetna <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="Proizvodi.html">Proizvodi</a>
@@ -35,7 +68,7 @@
           <a class="nav-link" href="SolidSurface.html">Kerrock</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Pitajte.html">Pitajte</a>
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal" data-whatever="">Pitajte</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="Akcije.html">Akcije</a>
@@ -78,20 +111,20 @@
           Solid Surface
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">VIP</a>
-          <a class="dropdown-item" href="#">Zubarska ordinacija Ortis Novi Sad</a>
-          <a class="dropdown-item" href="#">Boje himacs</a>
-          <a class="dropdown-item" href="#">Himacs solid surface</a>
-          <a class="dropdown-item" href="#">MTS Telekom Srbija</a>
-          <a class="dropdown-item" href="#">Hotel Oltrant</a>
-          <a class="dropdown-item" href="#">Solid surface umivaonici po meri</a>
-          <a class="dropdown-item" href="#">Splendid kerrock</a>
-          <a class="dropdown-item" href="#">Umivaonici kerrock</a>
-          <a class="dropdown-item" href="#">Sudopere kerrock</a>
-          <a class="dropdown-item" href="#">Boje kerrock-a</a>
-          <a class="dropdown-item" href="#">Bekament</a>
-          <a class="dropdown-item" href="#">Telenor</a>
-          <a class="dropdown-item" href="#">Caribic pizzerija Novi Sad</a>
+          <a class="dropdown-item" href="vip.html">VIP</a>
+          <a class="dropdown-item" href="zubarskaordinacijans.html">Zubarska ordinacija Ortis Novi Sad</a>
+          <a class="dropdown-item" href="bojehimacks.html">Boje himacs</a>
+          <a class="dropdown-item" href="himackssolid.html">Himacs solid surface</a>
+          <a class="dropdown-item" href="mts.html">MTS Telekom Srbija</a>
+          <a class="dropdown-item" href="hoteloltrant.html">Hotel Oltrant</a>
+          <a class="dropdown-item" href="solidsurfaceumivaonici.html">Solid surface umivaonici po meri</a>
+          <a class="dropdown-item" href="splendid.html">Splendid kerrock</a>
+          <a class="dropdown-item" href="umivaonicikerrock.html">Umivaonici kerrock</a>
+          <a class="dropdown-item" href="sudoperekerrock.html">Sudopere kerrock</a>
+          <a class="dropdown-item" href="bojekerrock.html">Boje kerrock-a</a>
+          <a class="dropdown-item" href="bekament.html">Bekament</a>
+          <a class="dropdown-item" href="telenor.html">Telenor</a>
+          <a class="dropdown-item" href="caribic.html">Caribic pizzerija Novi Sad</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -281,28 +314,28 @@
         <div class="col-4 col-md-4 footerleft col-sm-12">
           <div class="logofooter"><img src="pics/logo.png" style="margin: 15px;"></div>
           <p>Kontakt</p>
-          <p><i class="fa fa-map-pin"></i> Subotica - Batinska 34, Tel.: 024 456-1187, 456-1186</p>
-          <p><i class="fa fa-map-pin"></i> Subotica - Banijska 2, Tel.: 024 547-886</p>
-          <p><i class="fa fa-map-pin"></i> Novi Sad - Rumenički put 11, Tel.: 021 518-092</p>
-          <p><i class="fa fa-map-pin"></i> Novi Beograd - Zemunska 22, Tel.: 011 612-8-995, 011 612-8-996</p>
+<a href="https://goo.gl/maps/8joSg6aANoA2"><p><i class="material-icons">location_on</i> Subotica - Batinska 34</a>, Tel.: 024 456-1187, 456-1186</p>
+          <a href="https://goo.gl/maps/8TSqfGDc4a72"><p><i class="material-icons">location_on</i> Subotica - Banijska 2</a>, Tel.: 024 547-886</p>
+          <a href="https://goo.gl/maps/3nczhcrYQZw"><p><i class="material-icons">location_on</i> Novi Sad - Rumenički put 11</a>, Tel.: 021 518-092</p>
+          <a href="https://goo.gl/maps/T5xWrEgnUBz"><p><i class="material-icons">location_on</i> Novi Beograd - Zemunska 22</a>, Tel.: 011 612-8-995, 011 612-8-996</p>
         </div>
         <div class="col-md-2 col-sm-4 paddingtop-bottom">
           <h6 class="heading7">Proizvodi</h6>
           <ul class="footer-ul">
             <li>
-              <a href="#">Referense</a>
+              <a href="referense.html">Referense</a>
             </li>
             <li>
-              <a href="#">Kerrock</a>
+              <a href="kerrock.html">Kerrock</a>
             </li>
             <li>
-              <a href="#">Pitajte</a>
+              <a data-toggle="modal" data-target="#exampleModal" data-whatever="">Pitajte</a>
             </li>
             <li>
-              <a href="#">Akcije</a>
+              <a href="akcije.html">Akcije</a>
             </li>
             <li>
-              <a href="#">Prodavnica</a>
+              <a href="prodavnica.html">Prodavnica</a>
             </li>
           </ul>
         </div>
@@ -353,7 +386,20 @@
                       $(this).addClass('selected');
 
                     });
-                  });
+    });
+
+
+    // pitajte
+
+    $('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget)
+  var recipient = button.data('whatever') 
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + recipient)
+  modal.find('.modal-body input').val(recipient)
+})
+
+
 
                   // delegate calls to data-toggle="lightbox"
                   $(document).on('click', '[data-toggle="lightbox"]:not([data-gallery="navigateTo"])', function(event) {

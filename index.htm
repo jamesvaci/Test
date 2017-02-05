@@ -15,29 +15,81 @@
   <link href="css/sidebar-collapse.css" rel="stylesheet">
   <link href="css/demo.css" rel="stylesheet">
   <link href="css/ekko-lightbox.css" rel="stylesheet">
+  <link rel="icon" href="pics/logotab.png" >
   <title></title>
 </head>
   <body>
-<!--   <div id="myModal" class="modal fade">
-  <div class="modal-dialog">
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
     <div class="modal-content">
-      
-      <div class="modal-body">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        Hello world!
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Poruka</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-      
-      <div class="modal-footer"><button type="button" class="btn btn-primary">OK</button></div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="form-control-label">Ime i prezime:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="form-control-label">Subjekat:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="form-control-label">Poruka:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="color: #000000 !important">Zatvori</button>
+        <button type="button" class="btn btn-primary">Pošalji</button>
+      </div>
     </div>
   </div>
-</div> -->
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Poruka</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="form-control-label">Ime i prezime:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="form-control-label">Subjekat:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="form-control-label">Poruka:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="color: #000000 !important">Zatvori</button>
+        <button type="button" class="btn btn-primary">Pošalji</button>
+      </div>
+    </div>
+  </div>
+</div>
   <nav class="navbar navbar-toggleable-md navbar-light bg-faded z-depth-5 " >
     <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right" data-target="#navbarNav" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button> 
     <a class="navbar-brand" href="#"><img src="pics/logo.png" style="height: 70%;"></a>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav nav mr-auto mt-2 mt-md-0">
         <li class="nav-item">
-          <a class="nav-link" href="#">Pocetna <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.htm">Pocetna <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="proizvodi.html">Proizvodi</a>
@@ -49,7 +101,7 @@
           <a class="nav-link" href="solidsurface.html">Kerrock</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pitajte.html">Pitajte</a>
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal" data-whatever="">Pitajte</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="akcije.html">Akcije</a>
@@ -69,7 +121,10 @@
           <a class="nav-link" href="#">EN</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">Login</a>
+          <a class="nav-link" href="#">HU</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Uloguj se</a>
         </li>
         </ul>
       </ul>
@@ -164,84 +219,91 @@ od davanja idejnog rešenja, projektovanja, preko izrade enterijera.
 </div>
 <br>
 	<h3 style="text-align: center; padding: 5px">Proizvodi</h3>
-<div class="row">
-            <div class="col-md-4 col-sm-8 view overlay hoverable">
-              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\kuhinje\Moderne\Lumino/lumino.jpg"><img class="img-fluid" src="pics\kuhinje\Moderne\Lumino/lumino.jpg" width="100%"></a>
-              <a href="Kuhinje.html">
-                <div class="mask flex-center">
-              <h2 class="white-text">Kuhinje</h2>
-                </div>
-                </a>
+
+          <div class="row">
+            <div class="col-md-4 col-sm-8">
+              <div class="view overlay hoverable">
+                <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\kuhinje\Moderne\Lumino/lumino.jpg"><img class="img-fluid picture" src="pics\kuhinje\Moderne\Lumino/lumino.jpg" width="100%"></a>
+                <a href="Kuhinje.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Kuhinje</h2>
+    </div>
+    </a>
+              </div>
             </div>
             <div class="col-md-4 col-sm-8 view overlay hoverable">
-              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\kuhinje\Moderne\Futura/futura.jpg"><img class="img-fluid" src="pics\kuhinje\Moderne\Futura/futura.jpg" width="100%"></a>
-              <a href="futura.html">
-                <div class="mask flex-center">
-              <h2 class="white-text">Solid Surface</h2>
-                </div>
-                </a>
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics/kuhinje/rusticne/Afrodita/afrodita.jpg"><img class="img-fluid" src="pics/solid_surfice/bekament/bekament.jpg" width="100%"></a>
+                <a href="solidsurface.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Solid Surface</h2>
+    </div>
+    </a>
             </div>
             <div class="col-md-4 col-sm-8 view overlay hoverable">
-              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\kuhinje\Moderne\Futura/futura.jpg"><img class="img-fluid" src="pics\kuhinje\Moderne\Futura/futura.jpg" width="100%"></a>
-              <a href="futura.html">
-                <div class="mask flex-center">
-              <h2 class="white-text">Lumino Kerrock</h2>
-                </div>
-                </a>
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\lumino_radovi\opticarska radnja/2014.11.20.16.04.56_IMG_1294 copy bane ok.jpg"><img class="img-fluid" src="pics\lumino_radovi\opticarska radnja/2014.11.20.16.04.56_IMG_1294 copy bane ok.jpg" width="100%"></a>
+                <a href="luminokerrock.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Lumino Kerrock</h2>
+    </div>
+    </a>
             </div>
-</div>
-<div class="row">
-            <div class="col-md-4 col-sm-8 view overlay hoverable">
-              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics/kuhinje/Moderne/Lumino/lumino.jpg"><img class="img-fluid" src="pics/kuhinje/Moderne/Lumino/lumino.jpg" width="100%"></a>
-              <a href="futura.html">
-                <div class="mask flex-center">
-              <h2 class="white-text">Enterijeri</h2>
-                </div>
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-8 view overlay hoverable">
-              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\kuhinje\Moderne\Futura/futura.jpg"><img class="img-fluid" src="pics\kuhinje\Moderne\Futura/futura.jpg" width="100%"></a>
-              <a href="futura.html">
-                <div class="mask flex-center">
-              <h2 class="white-text">Sobna Vrata</h2>
-                </div>
-                </a>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-8 ">
+              <div class="view overlay hoverable">
+                <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics/Enterijeri/zubarska_ordinacija_Ortis_ns/2016.09.17.08.44.21_0-02-01-d631e465b79301ebd82fd1f2781205f44961397d432f26d2e60f469be97395a7_full.0.jpg"><img class="img-fluid picture" src="pics/Enterijeri/zubarska_ordinacija_Ortis_ns/2016.09.17.08.44.21_0-02-01-d631e465b79301ebd82fd1f2781205f44961397d432f26d2e60f469be97395a7_full.0.jpg" width="100%"></a>
+                <a href="enterijeri.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Enterijeri</h2>
+    </div>
+    </a>
+              </div>
             </div>
             <div class="col-md-4 col-sm-8 view overlay hoverable">
-              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\kuhinje\Moderne\Futura/futura.jpg"><img class="img-fluid" src="pics\kuhinje\Moderne\Futura/futura.jpg" width="100%"></a>
-              <a href="futura.html">
-                <div class="mask flex-center">
-              <h2 class="white-text">Namestaj Kupatila</h2>
-                </div>
-                </a>
-            </div>
-</div>
-<div class="row">
-            <div class="col-md-4 col-sm-8 view overlay hoverable">
-              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\kuhinje\Moderne\Futura/futura.jpg"><img class="img-fluid" src="pics\kuhinje\Moderne\Futura/futura.jpg" width="100%"></a>
-              <a href="futura.html">
-                <div class="mask flex-center">
-              <h2 class="white-text">AquaHome Oprema</h2>
-                </div>
-                </a>
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics/kuhinje/rusticne/Afrodita/afrodita.jpg"><img class="img-fluid" src="pics/vrata-1.jpg" width="100%"></a>
+                <a href="sobnavrata.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Sobna Vrata</h2>
+    </div>
+    </a>
             </div>
             <div class="col-md-4 col-sm-8 view overlay hoverable">
-              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\kuhinje\Moderne\Futura/futura.jpg"><img class="img-fluid" src="pics\kuhinje\Moderne\Futura/futura.jpg" width="100%"></a>
-              <a href="futura.html">
-                <div class="mask flex-center">
-              <h2 class="white-text">Akcije Meseca</h2>
-                </div>
-                </a>
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics/kuhinje/klasicne/Karmen/karmen.jpg"><img class="img-fluid" src="pics/Milano.jpg" width="100%"></a>
+                <a href="namestajkupatila.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Namestaj Kupatila</h2>
+    </div>
+    </a>
             </div>
-            <div class="col-md-4 col-sm-8 view overlay hoverable">
-              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\kuhinje\Moderne\Futura/futura.jpg"><img class="img-fluid" src="pics\kuhinje\Moderne\Futura/futura.jpg" width="100%"></a>
-              <a href="futura.html">
-                <div class="mask flex-center">
-              <h2 class="white-text">Akcije</h2>
-                </div>
-                </a>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-8 ">
+              <div class="view overlay hoverable">
+                <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics/kuhinje/Moderne/Lumino/luminokuhinje.jpg"><img class="img-fluid picture" src="pics/SanitarijeProizvodi.jpg" width="100%"></a>
+                <a href="aquahome.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">AquaHome Opremma za kupatilo</h2>
+    </div>
+    </a>
+              </div>
             </div>
-</div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics/kuhinje/rusticne/Afrodita/afrodita.jpg"><img class="img-fluid" src="pics/kuhinje/rusticne/Afrodita/afrodita.jpg" width="100%"></a>
+                <a href="akcojameseca.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Akcija Meseca</h2>
+    </div>
+    </a>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics/kuhinje/klasicne/Karmen/karmen.jpg"><img class="img-fluid" src="pics/kuhinje/klasicne/Karmen/karmen.jpg" width="100%"></a>
+                <a href="akcije.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Akcije</h2>
+    </div>
+    </a>
+            </div>
+          </div>
 <div  style="padding-top: 20px"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1k5pBLXgfN8bJTeA9UjfAM7SqOSQ" width="100%" height="480"></iframe></div>
 </div>
   <nav class="navbar sticky-bottom navbar-light bg-faded bg-primary" style="margin-top: 150px; background: #0d47a1; color: #fff; padding-top: 25px; box-shadow:inset 0px 10px 40px 0 rgba(0,0,0,.45);">
@@ -250,28 +312,28 @@ od davanja idejnog rešenja, projektovanja, preko izrade enterijera.
         <div class="col-4 col-md-4 footerleft col-sm-12">
           <div class="logofooter"><img src="pics/logo.png" style="margin: 15px;"></div>
           <p>Kontakt</p>
-          <p><i class="fa fa-map-pin"></i> Subotica - Batinska 34, Tel.: 024 456-1187, 456-1186</p>
-          <p><i class="fa fa-map-pin"></i> Subotica - Banijska 2, Tel.: 024 547-886</p>
-          <p><i class="fa fa-map-pin"></i> Novi Sad - Rumenički put 11, Tel.: 021 518-092</p>
-          <p><i class="fa fa-map-pin"></i> Novi Beograd - Zemunska 22, Tel.: 011 612-8-995, 011 612-8-996</p>
+          <a href="https://goo.gl/maps/8joSg6aANoA2"><p><i class="material-icons">location_on</i> Subotica - Batinska 34</a>, Tel.: 024 456-1187, 456-1186</p>
+          <a href="https://goo.gl/maps/8TSqfGDc4a72"><p><i class="material-icons">location_on</i> Subotica - Banijska 2</a>, Tel.: 024 547-886</p>
+          <a href="https://goo.gl/maps/3nczhcrYQZw"><p><i class="material-icons">location_on</i> Novi Sad - Rumenički put 11</a>, Tel.: 021 518-092</p>
+          <a href="https://goo.gl/maps/T5xWrEgnUBz"><p><i class="material-icons">location_on</i> Novi Beograd - Zemunska 22</a>, Tel.: 011 612-8-995, 011 612-8-996</p>
         </div>
         <div class="col-md-2 col-sm-4 paddingtop-bottom">
           <h6 class="heading7">Proizvodi</h6>
           <ul class="footer-ul">
             <li>
-              <a href="#">Referense</a>
+              <a href="referense.html">Referense</a>
             </li>
             <li>
-              <a href="#">Kerrock</a>
+              <a href="kerrock.html">Kerrock</a>
             </li>
             <li>
-              <a href="#">Pitajte</a>
+              <a data-toggle="modal" data-target="#exampleModal" data-whatever="">Pitajte</a>
             </li>
             <li>
-              <a href="#">Akcije</a>
+              <a href="akcije.html">Akcije</a>
             </li>
             <li>
-              <a href="#">Prodavnica</a>
+              <a href="prodavnica.html">Prodavnica</a>
             </li>
           </ul>
         </div>
@@ -326,6 +388,17 @@ od davanja idejnog rešenja, projektovanja, preko izrade enterijera.
 
       });
     });
+
+
+    // pitajte
+
+    $('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget)
+  var recipient = button.data('whatever') 
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + recipient)
+  modal.find('.modal-body input').val(recipient)
+})
 
 
 
