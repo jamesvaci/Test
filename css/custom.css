@@ -51,6 +51,9 @@ position: relative;
 	opacity: 0;
 	transition: 0.3 ease-in-out;
 }
+.mask:hover{
+	background: rgba(0,0,0,0.3);
+}
 
 .nav-hoverable {
   transition: box-shadow .55s;
