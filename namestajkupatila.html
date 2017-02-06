@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"><!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/album.css" rel="stylesheet">
+  <link href="css/ekko-lightbox.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <style class="anchorjs">
+  </style>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/sidebar-collapse.css" rel="stylesheet">
+  <link href="css/demo.css" rel="stylesheet">
+  <link href="css/ekko-lightbox.css" rel="stylesheet">
+  <link rel="icon" href="pics/logotab.png" >
+  <title>Namestaj kupatila</title>
+</head>
+<body>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Poruka</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="form-control-label">Ime i prezime:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="form-control-label">Subjekat:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="form-control-label">Poruka:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="color: #000000 !important">Zatvori</button>
+        <button type="button" class="btn btn-primary">Pošalji</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded z-depth-5 " >
+    <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right" data-target="#navbarNav" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button> 
+    <a class="navbar-brand" href="#"><img src="pics/logo.png" style="height: 70%;"></a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav nav mr-auto mt-2 mt-md-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.htm">Pocetna <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="proizvodi.html">Proizvodi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="referense.html">Referense</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="solidsurface.html">Kerrock</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal" data-whatever="">Pitajte</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="akcije.html">Akcije</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Prodavnica</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kontakt.html">Kontakt</a>
+        </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">SR</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">EN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">HU</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Uloguj se</a>
+        </li>
+        </ul>
+      </ul>
+    </div>
+  </nav>
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded navbar-inverse bg-primary z-depth-2" style=" position: relative; color: #fff !important;">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="mx-auto" >
+  <a class="navbar-brand" href="#">Proizvodi</a>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle nav-hoverable" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #fff">
+          Kuhinje
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="klasicnekuhinje.html">Klasicne Kuhinje</a>
+          <a class="dropdown-item" href="ModerneKuhinje.html">Moderne Kuhinje</a>
+          <a class="dropdown-item" href="rusticnekuhinje.html">Rusticne</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle nav-hoverable" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #fff">
+          Solid Surface
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="vip.html">VIP</a>
+          <a class="dropdown-item" href="zubarskaordinacijans.html">Zubarska ordinacija Ortis Novi Sad</a>
+          <a class="dropdown-item" href="bojehimacks.html">Boje himacs</a>
+          <a class="dropdown-item" href="himackssolid.html">Himacs solid surface</a>
+          <a class="dropdown-item" href="mts.html">MTS Telekom Srbija</a>
+          <a class="dropdown-item" href="hoteloltrant.html">Hotel Oltrant</a>
+          <a class="dropdown-item" href="solidsurfaceumivaonici.html">Solid surface umivaonici po meri</a>
+          <a class="dropdown-item" href="splendid.html">Splendid kerrock</a>
+          <a class="dropdown-item" href="umivaonicikerrock.html">Umivaonici kerrock</a>
+          <a class="dropdown-item" href="sudoperekerrock.html">Sudopere kerrock</a>
+          <a class="dropdown-item" href="bojekerrock.html">Boje kerrock-a</a>
+          <a class="dropdown-item" href="bekament.html">Bekament</a>
+          <a class="dropdown-item" href="telenor.html">Telenor</a>
+          <a class="dropdown-item" href="caribic.html">Caribic pizzerija Novi Sad</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle nav-hoverable" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #fff">
+          Lumino Kerrock
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="aerodrombg.html">Aerodrom Beograd</a>
+          <a class="dropdown-item" href="bulevarcaffe.html">Bulevar Caffe</a>
+          <a class="dropdown-item" href="opticarskaradnja.html">Opticarska radnja</a>
+          <a class="dropdown-item" href="pulthotel.html">Pult Hotel Pullman</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle nav-hoverable" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #fff">
+          Enterijeri
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="boss.html">Boss</a>
+          <a class="dropdown-item" href="caffebar.html">Caffe Bar</a>
+          <a class="dropdown-item" href="continental.html">Continental</a>
+          <a class="dropdown-item" href="decijasoba.html">Decija Soba</a>
+          <a class="dropdown-item" href="dnevnasoba.html">Dnevna Soba</a>
+          <a class="dropdown-item" href="klinickicentar.html">Klinicki Centar - Ordinacija</a>
+          <a class="dropdown-item" href="namestaj.html">Namestaj</a>
+          <a class="dropdown-item" href="palmonbay.html">Palmon Bay Montenegro</a>
+          <a class="dropdown-item" href="patent.html">Patent Misicevo</a>
+          <a class="dropdown-item" href="plakari.html">Plakari</a>
+          <a class="dropdown-item" href="spavacasoba.html">Spavaca Soba</a>
+          <a class="dropdown-item" href="stolovi.html">Stolovi</a>
+          <a class="dropdown-item" href="zubarskaordinacija.html">Zubarska ordinacija Ortis Novi Sad</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle nav-hoverable" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #fff">
+          Sobna Vrata
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="sobnavrata.html">Sobna vrata</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-hoverable" href="namestajkupatila.html" style="color: #fff">Namastaj Kupatila <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle nav-hoverable" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #fff">
+          AquaHome Oprema za kupatilo
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="sanitarije.html">Sanitarije</a>
+          <a class="dropdown-item" href="tuskade.html">Tus kade liveni mermer</a>
+          <a class="dropdown-item" href="aquastil.html">Aquaestill</a>
+          <a class="dropdown-item" href="lajsne.html">Lajsne Genesis</a>
+          <a class="dropdown-item" href="sifon.html">Sifon Alca</a>
+          <a class="dropdown-item" href="huppe.html">HUPPE</a>
+          <a class="dropdown-item" href="kolpasan.html">Kolpa-San</a>
+          <a class="dropdown-item" href="keramickeplocice.html">Keramicke plocice</a>
+          <a class="dropdown-item" href="galanterija.html">Galanterija</a>
+          <a class="dropdown-item" href="armature.html">Armature</a>
+          <a class="dropdown-item" href="ego.html">EGO dizajnerski namestaj</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle nav-hoverable" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #fff">
+          Akcije Meseca
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="elektra.html">Elektra 170*80</a>
+          <a class="dropdown-item" href="Glanitna1.html">Glanitna plocica 12,5x50</a>
+          <a class="dropdown-item" href="Glanitna2.html">Glanitna plocica 12,5x50</a>
+          <a class="dropdown-item" href="Glanitna3.html">Glanitna plocica 60x60</a>
+          <a class="dropdown-item" href="Glanitna4.html">Glanitna plocica 60x60</a>
+          <a class="dropdown-item" href="Glanitna5.html">Glanitna plocica 60x60</a>
+          <a class="dropdown-item" href="Glanitna6.html">Glanitna plocica 60x60</a>
+          <a class="dropdown-item" href="sole75.html">Sole 75 K/SILVER</a>
+          <a class="dropdown-item" href="tp102.html">TP 102/K-D</a>
+          <a class="dropdown-item" href="tus100_80.html">TUS KADA TESO 100*80 DESNA</a>
+          <a class="dropdown-item" href="tus120_80.html">TUS KADA TESO 120*80-LEVA</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle nav-hoverable" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #fff">
+          Akcije
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="kupatilskinamestajakcije.html">Kupatilski Namestaj</a>
+          <a class="dropdown-item" href="sanitarijeakcije.html">Sanitarije</a>
+          <a class="dropdown-item" href="kuhinjeakcije.html">Kuhinje</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+  <div class="container" style="top: 50px">
+      <div class="row">
+        <div class="col">
+          <div class="row">
+            <h2 class="text-xs-center">Proizvodi</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-8">
+              <div class="view overlay hoverable">
+                <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/alfa55.jpg"><img class="img-fluid picture" src="pics\namestaj_kupatila\thumnails/alfa55.jpg" width="100%"></a>
+                <a href="alfa55.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Alfa 55</h2>
+    </div>
+    </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-8 view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/alfanew55.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/alfanew55.jpg" width="100%"></a>
+                <a href="alfanew55.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Alfa New 55</h2>
+    </div>
+    </a>
+            </div>
+            <div class="col-md-4 col-sm-8 view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/ananew120.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/ananew120.jpg" width="100%"></a>
+                <a href="ananew120.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Ana New 120</h2>
+    </div>
+    </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-8 ">
+              <div class="view overlay hoverable">
+                <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/anna120.jpg"><img class="img-fluid picture" src="pics\namestaj_kupatila\thumnails/anna120.jpg" width="100%"></a>
+                <a href="anna120.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Anna 120</h2>
+    </div>
+    </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-8 view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/aria60.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/aria60.jpg" width="100%"></a>
+                <a href="aria60.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Aria 60</h2>
+    </div>
+    </a>
+            </div>
+            <div class="col-md-4 col-sm-8 view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/art40.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/art40.jpg" width="100%"></a>
+                <a href="art40.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Art 40x20</h2>
+    </div>
+    </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-8 ">
+              <div class="view overlay hoverable">
+                <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/bane90.jpg"><img class="img-fluid picture" src="pics\namestaj_kupatila\thumnails/bane90.jpg" width="100%"></a>
+                <a href="bane90.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Bane 90</h2>
+    </div>
+    </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/betanew65.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/betanew65.jpg" width="100%"></a>
+                <a href="betanew65.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Beta New 65</h2>
+    </div>
+    </a>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/branka70.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/branka70.jpg" width="100%"></a>
+                <a href="branka70.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Branka 70</h2>
+    </div>
+    </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-8 ">
+              <div class="view overlay hoverable">
+                <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/country82.jpg"><img class="img-fluid picture" src="pics\namestaj_kupatila\thumnails/country82.jpg" width="100%"></a>
+                <a href="country82.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Country 82</h2>
+    </div>
+    </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/dea60.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/dea60.jpg" width="100%"></a>
+                <a href="dea60.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Dea 60</h2>
+    </div>
+    </a>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/dea60p.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/dea60p.jpg" width="100%"></a>
+                <a href="dea60p.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Dea 60 P-polica</h2>
+    </div>
+    </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-8 ">
+              <div class="view overlay hoverable">
+                <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/dea60v.jpg"><img class="img-fluid picture" src="pics\namestaj_kupatila\thumnails/dea60v.jpg" width="100%"></a>
+                <a href="dea60v.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Dea 60 V</h2>
+    </div>
+    </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/ego.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/ego.jpg" width="100%"></a>
+                <a href="ego.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">EGO</h2>
+    </div>
+    </a>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/fantast86.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/fantast86.jpg" width="100%"></a>
+                <a href="fantast86.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Fantast 86</h2>
+    </div>
+    </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-8 ">
+              <div class="view overlay hoverable">
+                <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/gama75.jpg"><img class="img-fluid picture" src="pics\namestaj_kupatila\thumnails/gama75.jpg" width="100%"></a>
+                <a href="gama75.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Gama 75</h2>
+    </div>
+    </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/gamanew75.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/gamanew75.jpg" width="100%"></a>
+                <a href="gamanew75.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Gama New 75</h2>
+    </div>
+    </a>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/golf60.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/golf60.jpg" width="100%"></a>
+                <a href="golf60.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Golf 60-80-90-100-120</h2>
+    </div>
+    </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-8 ">
+              <div class="view overlay hoverable">
+                <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/gracijaextra140.jpg"><img class="img-fluid picture" src="pics\namestaj_kupatila\thumnails/gracijaextra140.jpg" width="100%"></a>
+                <a href="gracijaextra140.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Gracija Extra 140</h2>
+    </div>
+    </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/image90.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/image90.jpg" width="100%"></a>
+                <a href="image90.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Image 90</h2>
+    </div>
+    </a>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/jednokrilmi90.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/jednokrilni90.jpg" width="100%"></a>
+                <a href="jednokrilna90.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Jednokrilni V. <br>ormaric 90-60</h2>
+    </div>
+    </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-8 ">
+              <div class="view overlay hoverable">
+                <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/lea50.jpg"><img class="img-fluid picture" src="pics\namestaj_kupatila\thumnails/lea50.jpg" width="100%"></a>
+                <a href="lea50.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Lea 50</h2>
+    </div>
+    </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/leon60.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/leon60.jpg" width="100%"></a>
+                <a href="leon60.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Leon 60</h2>
+    </div>
+    </a>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/linea61.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/linea61.jpg" width="100%"></a>
+                <a href="linea61.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Linea 61</h2>
+    </div>
+    </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-8 ">
+              <div class="view overlay hoverable">
+                <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/lorena90.jpg"><img class="img-fluid picture" src="pics\namestaj_kupatila\thumnails/lorena90.jpg" width="100%"></a>
+                <a href="lorena90.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Lorena 90</h2>
+    </div>
+    </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/lorenanew60.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/lorenanew60.jpg" width="100%"></a>
+                <a href="lorenanew60.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Lorena New 60</h2>
+    </div>
+    </a>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/lorenanew60.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/lorenanew60.jpg" width="100%"></a>
+                <a href="lorenanew90.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Lorena New 90</h2>
+    </div>
+    </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-8 ">
+              <div class="view overlay hoverable">
+                <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/lucija86.jpg"><img class="img-fluid picture" src="pics\namestaj_kupatila\thumnails/lucija86.jpg" width="100%"></a>
+                <a href="lucija86.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Lucija 86</h2>
+    </div>
+    </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/lucijanew80.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/lucijanew80.jpg" width="100%"></a>
+                <a href="lucijanew80.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Lucija New 80</h2>
+    </div>
+    </a>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/mark.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/mark.jpg" width="100%"></a>
+                <a href="mark.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">MARK</h2>
+    </div>
+    </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-8 ">
+              <div class="view overlay hoverable">
+                <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/mia55.jpg"><img class="img-fluid picture" src="pics\namestaj_kupatila\thumnails/mia55.jpg" width="100%"></a>
+                <a href="mia55.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Mia 55-65-75</h2>
+    </div>
+    </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/milano120.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/milano120.jpg" width="100%"></a>
+                <a href="milano120.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Milano 120</h2>
+    </div>
+    </a>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/milano65.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/milano65.jpg" width="100%"></a>
+                <a href="milano65.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Milano 65-75</h2>
+    </div>
+    </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-8 ">
+              <div class="view overlay hoverable">
+                <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/milano90.jpg"><img class="img-fluid picture" src="pics\namestaj_kupatila\thumnails/mlano90.jpg" width="100%"></a>
+                <a href="milano90.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Milano 90</h2>
+    </div>
+    </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/milena55.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/milena55.jpg" width="100%"></a>
+                <a href="milena55.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Milena 55</h2>
+    </div>
+    </a>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/mirror60.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/mirror60.jpg" width="100%"></a>
+                <a href="mirror60.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Mirror 60-65-75-<br>80-90-100-120</h2>
+    </div>
+    </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-8 ">
+              <div class="view overlay hoverable">
+                <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/nefertiti90.jpg"><img class="img-fluid picture" src="pics\namestaj_kupatila\thumnails/nefertiti90.jpg" width="100%"></a>
+                <a href="nefertiti90.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Nefertiti 90</h2>
+    </div>
+    </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/nefertitinew90.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/nefertitinew90.jpg" width="100%"></a>
+                <a href="nefertitinew90.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Nefertiti New 90</h2>
+    </div>
+    </a>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/new60.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/new60.jpg" width="100%"></a>
+                <a href="new60.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">New 60-120</h2>
+    </div>
+    </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-8 ">
+              <div class="view overlay hoverable">
+                <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/nika72.jpg"><img class="img-fluid picture" src="pics\namestaj_kupatila\thumnails/nika72.jpg" width="100%"></a>
+                <a href="nika72.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Nika 72/60</h2>
+    </div>
+    </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/nina100.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/nina100.jpg" width="100%"></a>
+                <a href="nina100.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Nina 100</h2>
+    </div>
+    </a>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/ogledaloclassic.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/ogledaloclassic.jpg" width="100%"></a>
+                <a href="ogledaloclassic.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Ogledalo classic <br> 55,60,65,75,80,<br>90,100,120</h2>
+    </div>
+    </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-8 ">
+              <div class="view overlay hoverable">
+                <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/ogledaloprestige.jpg"><img class="img-fluid picture" src="pics\namestaj_kupatila\thumnails/ogledaloprestige.jpg" width="100%"></a>
+                <a href="ogledaloprestige.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Ogledalo Prestige<br> 60,70,80,90,<br>100,120</h2>
+    </div>
+    </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/opera80.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/opera80.jpg" width="100%"></a>
+                <a href="opera80.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Opera 80</h2>
+    </div>
+    </a>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/prestige800.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/prestige800.jpg" width="100%"></a>
+                <a href="prestige800.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Prestige 800</h2>
+    </div>
+    </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-8 ">
+              <div class="view overlay hoverable">
+                <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/prestige900.jpg"><img class="img-fluid picture" src="pics\namestaj_kupatila\thumnails/prestige900.jpg" width="100%"></a>
+                <a href="prestige900.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Prestige 900</h2>
+    </div>
+    </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/prestige1000.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/prestige1000.jpg" width="100%"></a>
+                <a href="prestige1000.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Prestige 1000</h2>
+    </div>
+    </a>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/prestige1600.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/prestige1600.jpg" width="100%"></a>
+                <a href="prestige1600.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Prestige 1600</h2>
+    </div>
+    </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-8 ">
+              <div class="view overlay hoverable">
+                <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/prestige1850.jpg"><img class="img-fluid picture" src="pics\namestaj_kupatila\thumnails/prestige1850.jpg" width="100%"></a>
+                <a href="prestige1850.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Prestige 1850</h2>
+    </div>
+    </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/queen.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/queen.jpg" width="100%"></a>
+                <a href="queen.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Queen</h2>
+    </div>
+    </a>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/rasveta.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/rasveta.jpg" width="100%"></a>
+                <a href="rasveta.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Rasveta za kupatilski <br> namestaj</h2>
+    </div>
+    </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-8 ">
+              <div class="view overlay hoverable">
+                <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/samba 120.jpg"><img class="img-fluid picture" src="pics\namestaj_kupatila\thumnails/samba 120.jpg" width="100%"></a>
+                <a href="samba120.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Samba 120</h2>
+    </div>
+    </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/skraceneIV.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/skraceneIII.jpg" width="100%"></a>
+                <a href="skraceneIII.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Skracene vertikale <br> GE III</h2>
+    </div>
+    </a>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/skraceneIV.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/skraceneIV.jpg" width="100%"></a>
+                <a href="skraceneIV.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Skracene vertikale <br> GE IV</h2>
+    </div>
+    </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-8 ">
+              <div class="view overlay hoverable">
+                <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/stela60.jpg"><img class="img-fluid picture" src="pics\namestaj_kupatila\thumnails/stela60.jpg" width="100%"></a>
+                <a href="stela60.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Stela 60</h2>
+    </div>
+    </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/tango90.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/tango90.jpg" width="100%"></a>
+                <a href="tango90.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Tango 90</h2>
+    </div>
+    </a>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/tockici.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/tockici.jpg" width="100%"></a>
+                <a href="tockici.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Tockici za tus kabinu simple</h2>
+    </div>
+    </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-8 ">
+              <div class="view overlay hoverable">
+                <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/tockici2.jpg"><img class="img-fluid picture" src="pics\namestaj_kupatila\thumnails/tockici2.jpg" width="100%"></a>
+                <a href="tockici2.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Tockici za tus kabinu lux 2</h2>
+    </div>
+    </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/tockicilux.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/tockicilux.jpg" width="100%"></a>
+                <a href="tockicilux.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Tockici za tus kabinu lux</h2>
+    </div>
+    </a>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/twist100.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/twist100.jpg" width="100%"></a>
+                <a href="twist100.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Twist 100</h2>
+    </div>
+    </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-8 ">
+              <div class="view overlay hoverable">
+                <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/venecija60.jpg"><img class="img-fluid picture" src="pics\namestaj_kupatila\thumnails/venecija60.jpg" width="100%"></a>
+                <a href="venecija60.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Venecija 60</h2>
+    </div>
+    </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/vera65.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/vera65.jpg" width="100%"></a>
+                <a href="vera65.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Vera 65</h2>
+    </div>
+    </a>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/viktoria60v.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/viktoria60v.jpg" width="100%"></a>
+                <a href="viktoria60v.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Viktoria 60 V</h2>
+    </div>
+    </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-8 ">
+              <div class="view overlay hoverable">
+                <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/vip60.jpg"><img class="img-fluid picture" src="pics\namestaj_kupatila\thumnails/vip60.jpg" width="100%"></a>
+                <a href="vip60.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Vip 60</h2>
+    </div>
+    </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/viseciormar70.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/viseciormar70.jpg" width="100%"></a>
+                <a href="viseciormar70.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Viseci ormaric 70</h2>
+    </div>
+    </a>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/viseciormar90.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/viseciormar90.jpg" width="100%"></a>
+                <a href="viseciormar90.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">Viseci ormaric 90</h2>
+    </div>
+    </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-8 ">
+              <div class="view overlay hoverable">
+                <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/wcdaske.jpg"><img class="img-fluid picture" src="pics\namestaj_kupatila\thumnails/wcdaske.jpg" width="100%"></a>
+                <a href="wcdaske.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">WC Daske</h2>
+    </div>
+    </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-8  view overlay hoverable">
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\namestaj_kupatila\thumnails/wcsarka.jpg"><img class="img-fluid" src="pics\namestaj_kupatila\thumnails/wcsarka.jpg" width="100%"></a>
+                <a href="wcsarka.html">
+    <div class="mask flex-center">
+        <h2 class="white-text">WC sarka za <br>medijapan dasku</h2>
+    </div>
+    </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <nav class="navbar sticky-bottom navbar-light bg-faded bg-primary" style="margin-top: 150px; background: #0d47a1; color: #fff; padding-top: 25px; box-shadow:inset 0px 10px 40px 0 rgba(0,0,0,.45);">
+    <div class="container">
+      <div class="row">
+        <div class="col-4 col-md-4 footerleft col-sm-12">
+          <div class="logofooter"><img src="pics/logo.png" style="margin: 15px;"></div>
+          <p>Kontakt</p>
+          <a href="https://goo.gl/maps/8joSg6aANoA2"><p><i class="material-icons">location_on</i> Subotica - Batinska 34</a>, Tel.: 024 456-1187, 456-1186</p>
+          <a href="https://goo.gl/maps/8TSqfGDc4a72"><p><i class="material-icons">location_on</i> Subotica - Banijska 2</a>, Tel.: 024 547-886</p>
+          <a href="https://goo.gl/maps/3nczhcrYQZw"><p><i class="material-icons">location_on</i> Novi Sad - Rumenički put 11</a>, Tel.: 021 518-092</p>
+          <a href="https://goo.gl/maps/T5xWrEgnUBz"><p><i class="material-icons">location_on</i> Novi Beograd - Zemunska 22</a>, Tel.: 011 612-8-995, 011 612-8-996</p>
+        </div>
+        <div class="col-md-2 col-sm-4 paddingtop-bottom">
+          <h6 class="heading7">Proizvodi</h6>
+          <ul class="footer-ul">
+            <li>
+              <a href="referense.html">Referense</a>
+            </li>
+            <li>
+              <a href="kerrock.html">Kerrock</a>
+            </li>
+            <li>
+              <a data-toggle="modal" data-target="#exampleModal" data-whatever="">Pitajte</a>
+            </li>
+            <li>
+              <a href="akcije.html">Akcije</a>
+            </li>
+            <li>
+              <a href="prodavnica.html">Prodavnica</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-4 paddingtop-bottom">
+          <h6 class="heading7">Najnovije</h6>
+          <div class="post">
+            <p>Novi projekat  <span>27 January 2017</span></p>
+            <p>Nagrada Privredne komore <span>23 December 2016</span></p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-4 paddingtop-bottom">
+          <div class="fb-page" data-adapt-container-width="true" data-height="300" data-hide-cover="false" data-href="https://www.facebook.com/facebook" data-show-facepile="true" data-small-header="false" data-tabs="timeline" style="margin-bottom:15px;">
+            <div class="fb-xfbml-parse-ignore">
+              <blockquote cite="https://www.facebook.com/facebook">
+                <a href="https://www.facebook.com/bane.enterijeri"><img src="pics/facebook.png" style="width: 50px"></a>
+              </blockquote><i aria-hidden="true" class="fa fa-facebook"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js">
+  </script> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js">
+  </script> 
+  <script src="js/jquery-3.1.1.min.js" type="text/javascript">
+  </script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="js/bootstrap.js">
+  </script> 
+  <script src="js/ekko-lightbox.js">
+  </script> <!-- for documentation only -->
+   
+  <script src="Bootstrap%20Lightbox_files/anchor.js">
+  </script> 
+  <script type="text/javascript">
+
+              $(document).ready(function ($) {
+
+                  $(function () {
+
+                    var links = $('.sidebar-links > div');
+
+                    links.on('click', function () {
+
+                      links.removeClass('selected');
+                      $(this).addClass('selected');
+
+                    });
+    });
+
+
+    // pitajte
+
+    $('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget)
+  var recipient = button.data('whatever') 
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + recipient)
+  modal.find('.modal-body input').val(recipient)
+})
+
+
+
+                  // delegate calls to data-toggle="lightbox"
+                  $(document).on('click', '[data-toggle="lightbox"]:not([data-gallery="navigateTo"])', function(event) {
+                      event.preventDefault();
+                      return $(this).ekkoLightbox({
+                          onShown: function() {
+                              if (window.console) {
+                                  return console.log('Checking our the events huh?');
+                              }
+                          },
+              onNavigate: function(direction, itemIndex) {
+                              if (window.console) {
+                                  return console.log('Navigating '+direction+'. Current item: '+itemIndex);
+                              }
+              }
+                      });
+                  });
+
+                  //Programmatically call
+                  $('#open-image').click(function (e) {
+                      e.preventDefault();
+                      $(this).ekkoLightbox();
+                  });
+                  $('#open-youtube').click(function (e) {
+                      e.preventDefault();
+                      $(this).ekkoLightbox();
+                  });
+
+          // navigateTo
+                  $(document).on('click', '[data-toggle="lightbox"][data-gallery="navigateTo"]', function(event) {
+                      event.preventDefault();
+
+                      return $(this).ekkoLightbox({
+                          onShown: function() {
+
+                this.modal().on('click', '.modal-footer a', function(e) {
+
+                  e.preventDefault();
+                  this.navigateTo(2);
+
+                              }.bind(this));
+
+                          }
+                      });
+                  });
+
+
+                  /**
+                   * Documentation specific - ignore this
+                   */
+                  anchors.options.placement = 'left';
+                  anchors.add('h3');
+                  $('code[data-code]').each(function() {
+
+                      var $code = $(this),
+                          $pair = $('div[data-code="'+$code.data('code')+'"]');
+
+                      $code.hide();
+                      var text = $code.text($pair.html()).html().trim().split("\n");
+                      var indentLength = text[text.length - 1].match(/^\s+/)
+                      indentLength = indentLength ? indentLength[0].length : 24;
+                      var indent = '';
+                      for(var i = 0; i < indentLength; i++)
+                          indent += ' ';
+                      if($code.data('trim') == 'all') {
+                          for (var i = 0; i < text.length; i++)
+                              text[i] = text[i].trim();
+                      } else  {
+                          for (var i = 0; i < text.length; i++)
+                              text[i] = text[i].replace(indent, '    ').replace('    ', '');
+                      }
+                      text = text.join("\n");
+                      $code.html(text).show();
+
+                  });
+              });
+  </script>
+</body>
+</html>
