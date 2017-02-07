@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"><!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/album.css" rel="stylesheet">
+  <link href="css/ekko-lightbox.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <style class="anchorjs">
+  </style>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/sidebar-collapse.css" rel="stylesheet">
+  <link href="css/demo.css" rel="stylesheet">
+  <link href="css/ekko-lightbox.css" rel="stylesheet">
+  <link rel="icon" href="pics/logotab.png" >
+  <title>Kupatilski namestaj - Akcije</title>
+</head>
+<body>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Poruka</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="form-control-label">Ime i prezime:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="form-control-label">Subjekat:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="form-control-label">Poruka:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="color: #000000 !important">Zatvori</button>
+        <button type="button" class="btn btn-primary">Pošalji</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded z-depth-5 " >
+    <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right" data-target="#navbarNav" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button> 
+    <a class="navbar-brand" href="#"><img src="pics/logo.png" style="height: 70%;"></a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav nav mr-auto mt-2 mt-md-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.htm">Pocetna <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="proizvodi.html">Proizvodi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="referense.html">Referense</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="solidsurface.html">Kerrock</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal" data-whatever="">Pitajte</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="akcije.html">Akcije</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Prodavnica</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kontakt.html">Kontakt</a>
+        </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">SR</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">EN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">HU</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Uloguj se</a>
+        </li>
+        </ul>
+      </ul>
+    </div>
+  </nav>
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded navbar-inverse bg-primary z-depth-2" style=" position: relative; color: #fff !important;">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="mx-auto" >
+  <a class="navbar-brand" href="#">Proizvodi</a>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle nav-hoverable" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #fff">
+          Kuhinje
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="klasicnekuhinje.html">Klasicne Kuhinje</a>
+          <a class="dropdown-item" href="ModerneKuhinje.html">Moderne Kuhinje</a>
+          <a class="dropdown-item" href="rusticnekuhinje.html">Rusticne</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle nav-hoverable" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #fff">
+          Solid Surface
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="vip.html">VIP</a>
+          <a class="dropdown-item" href="zubarskaordinacijans.html">Zubarska ordinacija Ortis Novi Sad</a>
+          <a class="dropdown-item" href="bojehimacks.html">Boje himacs</a>
+          <a class="dropdown-item" href="himackssolid.html">Himacs solid surface</a>
+          <a class="dropdown-item" href="mts.html">MTS Telekom Srbija</a>
+          <a class="dropdown-item" href="hoteloltrant.html">Hotel Oltrant</a>
+          <a class="dropdown-item" href="solidsurfaceumivaonici.html">Solid surface umivaonici po meri</a>
+          <a class="dropdown-item" href="splendid.html">Splendid kerrock</a>
+          <a class="dropdown-item" href="umivaonicikerrock.html">Umivaonici kerrock</a>
+          <a class="dropdown-item" href="sudoperekerrock.html">Sudopere kerrock</a>
+          <a class="dropdown-item" href="bojekerrock.html">Boje kerrock-a</a>
+          <a class="dropdown-item" href="bekament.html">Bekament</a>
+          <a class="dropdown-item" href="telenor.html">Telenor</a>
+          <a class="dropdown-item" href="caribic.html">Caribic pizzerija Novi Sad</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle nav-hoverable" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #fff">
+          Lumino Kerrock
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="aerodrombg.html">Aerodrom Beograd</a>
+          <a class="dropdown-item" href="bulevarcaffe.html">Bulevar Caffe</a>
+          <a class="dropdown-item" href="opticarskaradnja.html">Opticarska radnja</a>
+          <a class="dropdown-item" href="pulthotel.html">Pult Hotel Pullman</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle nav-hoverable" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #fff">
+          Enterijeri
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="boss.html">Boss</a>
+          <a class="dropdown-item" href="caffebar.html">Caffe Bar</a>
+          <a class="dropdown-item" href="continental.html">Continental</a>
+          <a class="dropdown-item" href="decijasoba.html">Decija Soba</a>
+          <a class="dropdown-item" href="dnevnasoba.html">Dnevna Soba</a>
+          <a class="dropdown-item" href="klinickicentar.html">Klinicki Centar - Ordinacija</a>
+          <a class="dropdown-item" href="namestaj.html">Namestaj</a>
+          <a class="dropdown-item" href="palmonbay.html">Palmon Bay Montenegro</a>
+          <a class="dropdown-item" href="patent.html">Patent Misicevo</a>
+          <a class="dropdown-item" href="plakari.html">Plakari</a>
+          <a class="dropdown-item" href="spavacasoba.html">Spavaca Soba</a>
+          <a class="dropdown-item" href="stolovi.html">Stolovi</a>
+          <a class="dropdown-item" href="zubarskaordinacija.html">Zubarska ordinacija Ortis Novi Sad</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle nav-hoverable" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #fff">
+          Sobna Vrata
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="sobnavrata.html">Sobna vrata</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-hoverable" href="namestajkupatila.html" style="color: #fff">Namastaj Kupatila <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle nav-hoverable" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #fff">
+          AquaHome Oprema za kupatilo
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="sanitarije.html">Sanitarije</a>
+          <a class="dropdown-item" href="tuskade.html">Tus kade liveni mermer</a>
+          <a class="dropdown-item" href="aquastil.html">Aquaestill</a>
+          <a class="dropdown-item" href="lajsne.html">Lajsne Genesis</a>
+          <a class="dropdown-item" href="sifon.html">Sifon Alca</a>
+          <a class="dropdown-item" href="huppe.html">HUPPE</a>
+          <a class="dropdown-item" href="kolpasan.html">Kolpa-San</a>
+          <a class="dropdown-item" href="keramickeplocice.html">Keramicke plocice</a>
+          <a class="dropdown-item" href="galanterija.html">Galanterija</a>
+          <a class="dropdown-item" href="armature.html">Armature</a>
+          <a class="dropdown-item" href="ego.html">EGO dizajnerski namestaj</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-hoverable" href="akcijemeseca.html" style="color: #fff">Akcije Meseca</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-hoverable" href="akcije.html" style="color: #fff">Akcije</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+  <div class="container" style="top: 50px">
+          <div class="row">
+            <h2 class="text-xs-center">Kupatilski namestaj - Akcije</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-8 view overlay hoverable">
+              <h3>Masažna kabina Gala G3   sa umivaonikom i   ogledalom</h3><h4><del> 563 256,00 RSD </del></h4>  <h4><mark> 337 953,00 RSD </mark></h4>
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\akcije/sanitarije/2013.08.05.10.08.57_01_1.jpg"><img class="img-fluid" src="pics\akcije/sanitarije/2013.08.05.10.08.57_01_1.jpg" width="100%"></a>
+            </div>
+            <div class="col-md-4 col-sm-8 view overlay hoverable">
+              <h3>Masažna kabina Vigor V4   tip ormarić sa   umivaonikom</h3><h4><del>812 232,00 RSD </del></h4>  <h4><mark>487 339,00 RSD </mark></h4>
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\akcije/sanitarije/2013.08.05.10.09.34_04_1.jpg"><img class="img-fluid" src="pics\akcije/sanitarije/2013.08.05.10.09.34_04_1.jpg" width="100%"></a>
+            </div>
+            <div class="col-md-4 col-sm-8 view overlay hoverable">
+              <h3>Masažna kada Simphony 140/MO+Baterija</h3><h4><del>234 612,00 RSD</del></h4>  <h4><mark>140 767,00 RSD</mark></h4>
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\akcije/sanitarije/2013.08.05.10.09.24_03_1.jpg"><img class="img-fluid" src="pics\akcije/sanitarije/2013.08.05.10.09.24_03_1.jpg" width="100%"></a>
+            </div>
+            <div class="col-md-4 col-sm-8 view overlay hoverable">
+              <h3>Masažni bazen Opera 180/MO + Lux       </h3><h4><del>840 168,00 RSD</del></h4>  <h4><mark>504 100,00 RSD</mark></h4>
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\akcije/sanitarije/2013.08.05.10.09.12_02_1.jpg"><img class="img-fluid" src="pics\akcije/sanitarije/2013.08.05.10.09.12_02_1.jpg" width="100%"></a>
+            </div>
+          </div>
+          <div class="row" style="padding-top: 50px">
+            <div class="col-md-4 col-sm-8 view overlay hoverable">
+              <h3>Tuš kabina za kadu Orion TK 150/K</h3><h4><del> 74 088,00 RSD </del></h4>  <h4><mark> 44 452,00 RSD </mark></h4>
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\akcije/sanitarije/2013.08.05.10.13.14_01_1.jpg"><img class="img-fluid" src="pics\akcije/sanitarije/2013.08.05.10.13.14_01_1.jpg" width="100%"></a>
+            </div>
+            <div class="col-md-4 col-sm-8 view overlay hoverable">
+              <h3>Tuš stena Orion 90/K</h3><h4><del>21 780,00 RSD </del></h4>  <h4><mark>13 068,00 RSD </mark></h4>
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\akcije/sanitarije/2013.08.05.10.20.37_08_1.jpg"><img class="img-fluid" src="pics\akcije/sanitarije/2013.08.05.10.20.37_08_1.jpg" width="100%"></a>
+            </div>
+            <div class="col-md-4 col-sm-8 view overlay hoverable">
+              <h3>Tuš stena OrionTS/90K Silver</h3><h4><del>26 160,00 RSD</del></h4>  <h4><mark>15 696,00 RSD</mark></h4>
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\akcije/sanitarije/2013.08.05.10.20.27_07_1.jpg"><img class="img-fluid" src="pics\akcije/sanitarije/2013.08.05.10.20.27_07_1.jpg" width="100%"></a>
+            </div>
+            <div class="col-md-4 col-sm-8 view overlay hoverable">
+              <h3>Tuš vrata Orion TV/2D 120/K</h3><h4><del>28 164,00 RSD</del></h4>  <h4><mark>16 898,00 RSD</mark></h4>
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\akcije/sanitarije/2013.08.05.10.20.57_09_1.jpg"><img class="img-fluid" src="pics\akcije/sanitarije/2013.08.05.10.20.57_09_1.jpg" width="100%"></a>
+            </div>
+   </div>
+          <div class="row" style="padding-top: 50px">
+            <div class="col-md-4 col-sm-8 view overlay hoverable">
+              <h3>Kupatilski nameštaj Sanja S 1981</h3><h4><del> 14 769,00 RSD </del></h4>  <h4><mark> 8 877,00 RSD </mark></h4>
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\akcije/sanitarije/2013.08.05.09.44.25_04_1.jpg"><img class="img-fluid" src="pics\akcije/sanitarije/2013.08.05.09.44.25_04_1.jpg" width="100%"></a>
+            </div>
+            <div class="col-md-4 col-sm-8 view overlay hoverable">
+              <h3>Kupatilski nameštaj Tia 60 i ormarić sa umivaonikom</h3><h4><del>92 412,00 RSD </del></h4>  <h4><mark>55 447,00 RSD </mark></h4>
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\akcije/sanitarije/2013.08.05.09.45.17_07_1.jpg"><img class="img-fluid" src="pics\akcije/sanitarije/2013.08.05.09.45.17_07_1.jpg" width="100%"></a>
+            </div>
+            <div class="col-md-4 col-sm-8 view overlay hoverable">
+              <h3>Kupatilski ormarić sa ogledalom Hana TOH 10</h3><h4><del>64 812,00 RSD</del></h4>  <h4><mark>38 887,00 RSD</mark></h4>
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\akcije/sanitarije/2013.08.05.10.20.27_07_1.jpg"><img class="img-fluid" src="pics\akcije/sanitarije/2013.08.05.10.20.27_07_1.jpg" width="100%"></a>
+            </div>
+   </div>
+          <div class="row" style="padding-top: 50px">
+            <div class="col-md-4 col-sm-8 view overlay hoverable">
+              <h3>EL 6360</h3><h4><del>3 396,00 RSD </del></h4>  <h4><mark> 5 088,00 RSD </mark></h4>
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\akcije/sanitarije/2013.09.19.10.13.05_EL 6360.jpg"><img class="img-fluid" src="pics\akcije/sanitarije/2013.09.19.10.13.05_EL 6360.jpg" width="100%"></a>
+            </div>
+            <div class="col-md-4 col-sm-8 view overlay hoverable">
+              <h3>EL 6363</h3><h4><del>3 164,00 RSD </del></h4>  <h4><mark>2 531,00 RSD </mark></h4>
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\akcije/sanitarije/2016.12.01.03.43.38_triton-el6363_v.jpg"><img class="img-fluid" src="pics\akcije/sanitarije/2016.12.01.03.43.38_triton-el6363_v.jpg" width="100%"></a>
+            </div>
+            <div class="col-md-4 col-sm-8 view overlay hoverable">
+              <h3>EL 9258</h3><h4><del>3 887,00 RSD</del></h4>  <h4><mark>3 110,00 RSD</mark></h4>
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\akcije/sanitarije/2013.09.19.09.28.18_EL 9258.jpg"><img class="img-fluid" src="pics\akcije/sanitarije/2013.09.19.09.28.18_EL 9258.jpg" width="100%"></a>
+            </div>
+        </div>
+          <div class="row" style="padding-top: 50px">
+            <div class="col-md-3 col-sm-8 view overlay hoverable">
+              <h3>EL 6366</h3><h4><del>6 804,00 RSD </del></h4>  <h4><mark> 5 443,00 RSD </mark></h4>
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\akcije/sanitarije/2013.09.19.09.18.54_EL 6366.jpg"><img class="img-fluid" src="pics\akcije/sanitarije/2013.09.19.09.18.54_EL 6366.jpg" width="100%"></a>
+            </div>
+            <div class="col-md-3 col-sm-8 view overlay hoverable">
+              <h3>EL 9248</h3><h4><del>5 856,00 RSD </del></h4>  <h4><mark> 4 685,00 RSD </mark></h4>
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\akcije/sanitarije/2016.12.01.03.45.07_index.jpg"><img class="img-fluid" src="pics\akcije/sanitarije/2016.12.01.03.45.07_index.jpg" width="100%"></a>
+            </div>
+            <div class="col-md-3 col-sm-8 view overlay hoverable">
+              <h3>GALANTERIJA EL 9674</h3><h4><del>3 648,00 RSD</del></h4>  <h4><mark>2 918,40 RSD</mark></h4>
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\akcije/sanitarije/2013.09.17.23.08.43_drzac-artemis_el 9674.jpg"><img class="img-fluid" src="pics\akcije/sanitarije/2013.09.17.23.08.43_drzac-artemis_el 9674.jpg" width="100%"></a>
+            </div>
+            <div class="col-md-3 col-sm-8 view overlay hoverable">
+              <h3>GALANTERIJA EL 9676</h3><h4><del>5 004,00 RSD</del></h4>  <h4><mark>4 003,20 RSD</mark></h4>
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\akcije/sanitarije/2013.09.17.23.19.02_polica-artemis_el9676.jpg"><img class="img-fluid" src="pics\akcije/sanitarije/2013.09.17.23.19.02_polica-artemis_el9676.jpg" width="100%"></a>
+            </div>
+        </div>
+          <div class="row" style="padding-top: 50px">
+            <div class="col-md-3 col-sm-8 view overlay hoverable">
+              <h3>GALANTERIJA EL 4241</h3><h4><del>7 152,00 RSD </del></h4>  <h4><mark>5 721,60 RSD </mark></h4>
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\akcije/sanitarije/2013.09.17.23.20.57_dozator-artemis_el 4241.jpg"><img class="img-fluid" src="pics\akcije/sanitarije/2013.09.17.23.20.57_dozator-artemis_el 4241.jpg" width="100%"></a>
+            </div>
+            <div class="col-md-3 col-sm-8 view overlay hoverable">
+              <h3>GALANTERIJA EL 4242</h3><h4><del>4 716,00 RSD </del></h4>  <h4><mark> 3 772,80 RSD </mark></h4>
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\akcije/sanitarije/2013.09.17.23.16.04_vjesalica-artemis_el 4242.jpg"><img class="img-fluid" src="pics\akcije/sanitarije/2013.09.17.23.16.04_vjesalica-artemis_el 4242.jpg" width="100%"></a>
+            </div>
+        </div>
+          <div class="row" style="padding-top: 50px">
+            <div class="col-md-4 col-sm-8 view overlay hoverable">
+              <h3>Kada Sonata 160x70 </h3><h4><del>29 234,00 RSD </del></h4>  <h4><mark>17 540,00 RSD </mark></h4>
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\akcije/sanitarije/2013.08.05.09.32.18_10_1.jpg"><img class="img-fluid" src="pics\akcije/sanitarije/2013.08.05.09.32.18_10_1.jpg" width="100%"></a>
+            </div>
+            <div class="col-md-4 col-sm-8 view overlay hoverable">
+              <h3>Tuš kada Flamenco 160x90/O</h3><h4><del>41 856,00 RSD </del></h4>  <h4><mark>35 578,00 RSD </mark></h4>
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\akcije/sanitarije/2015.02.04.19.05.36_kolpa_novosti 2011_Flamenco 180 x 80.jpg"><img class="img-fluid" src="pics\akcije/sanitarije/2015.02.04.19.05.36_kolpa_novosti 2011_Flamenco 180 x 80.jpg" width="100%"></a>
+            </div>
+            <div class="col-md-4 col-sm-8 view overlay hoverable">
+              <h3>Tuš kada SAMBA 90X70/O - L</h3><h4><del>26 040,00 RSD </del></h4>  <h4><mark>22 134,00 RSD </mark></h4>
+              <a class="col-sm-4" data-gallery="example-gallery" data-toggle="lightbox" href="pics\akcije/sanitarije/2015.02.04.18.56.59_2014_Tus_kad_Samba_90x70_cmyk.jpg"><img class="img-fluid" src="pics\akcije/sanitarije/2015.02.04.18.56.59_2014_Tus_kad_Samba_90x70_cmyk.jpg" width="100%"></a>
+            </div>
+        </div>
+</div>
+  <nav class="navbar sticky-bottom navbar-light bg-faded bg-primary" style="margin-top: 150px; background: #0d47a1; color: #fff; padding-top: 25px; box-shadow:inset 0px 10px 40px 0 rgba(0,0,0,.45);">
+    <div class="container">
+      <div class="row">
+        <div class="col-4 col-md-4 footerleft col-sm-12">
+<div class="logofooter"><img src="pics/logo.png" style="margin: 15px;"></div>
+          <p>Kontakt</p>
+          <a target="_blank" href="https://goo.gl/maps/8joSg6aANoA2"><p><i class="material-icons">location_on</i> Subotica - Batinska 34</a>, Tel.: 024 456-1187, 456-1186</p>
+          <a  target="_blank" href="https://goo.gl/maps/8TSqfGDc4a72"><p><i class="material-icons">location_on</i> Subotica - Banijska 2</a>, Tel.: 024 547-886</p>
+          <a  target="_blank" href="https://goo.gl/maps/3nczhcrYQZw"><p><i class="material-icons">location_on</i> Novi Sad - Rumenički put 11</a>, Tel.: 021 518-092</p>
+          <a  target="_blank" href="https://goo.gl/maps/T5xWrEgnUBz"><p><i class="material-icons">location_on</i> Novi Beograd - Zemunska 22</a>, Tel.: 011 612-8-995, 011 612-8-996</p>
+        </div>
+        <div class="col-md-2 col-sm-4 paddingtop-bottom">
+          <h6 class="heading7">Proizvodi</h6>
+          <ul class="footer-ul">
+            <li>
+              <a href="referense.html">Referense</a>
+            </li>
+            <li>
+              <a href="kerrock.html">Kerrock</a>
+            </li>
+            <li>
+              <a data-toggle="modal" data-target="#exampleModal" data-whatever="">Pitajte</a>
+            </li>
+            <li>
+              <a href="akcije.html">Akcije</a>
+            </li>
+            <li>
+              <a href="prodavnica.html">Prodavnica</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-4 paddingtop-bottom">
+          <h6 class="heading7">Najnovije</h6>
+          <div class="post">
+            <p>Novi projekat  <span>27 January 2017</span></p>
+            <p>Nagrada Privredne komore <span>23 December 2016</span></p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-4 paddingtop-bottom">
+          <div class="fb-page" data-adapt-container-width="true" data-height="300" data-hide-cover="false" data-href="https://www.facebook.com/facebook" data-show-facepile="true" data-small-header="false" data-tabs="timeline" style="margin-bottom:15px;">
+            <div class="fb-xfbml-parse-ignore">
+              <blockquote cite="https://www.facebook.com/facebook">
+                <a href="https://www.facebook.com/bane.enterijeri"><img src="pics/facebook.png" style="width: 50px"></a>
+              </blockquote><i aria-hidden="true" class="fa fa-facebook"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js">
+  </script> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js">
+  </script> 
+  <script src="js/jquery-3.1.1.min.js" type="text/javascript">
+  </script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="js/bootstrap.js">
+  </script> 
+  <script src="js/ekko-lightbox.js">
+  </script> <!-- for documentation only -->
+   
+  <script src="Bootstrap%20Lightbox_files/anchor.js">
+  </script> 
+  <script type="text/javascript">
+
+
+              $(document).ready(function ($) {
+
+                  $(function () {
+
+                    var links = $('.sidebar-links > div');
+
+                    links.on('click', function () {
+
+                      links.removeClass('selected');
+                      $(this).addClass('selected');
+
+                    });
+    });
+
+    // pitajte
+
+    $('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget)
+  var recipient = button.data('whatever') 
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + recipient)
+  modal.find('.modal-body input').val(recipient)
+})
+
+
+
+                  // delegate calls to data-toggle="lightbox"
+                  $(document).on('click', '[data-toggle="lightbox"]:not([data-gallery="navigateTo"])', function(event) {
+                      event.preventDefault();
+                      return $(this).ekkoLightbox({
+                          onShown: function() {
+                              if (window.console) {
+                                  return console.log('Checking our the events huh?');
+                              }
+                          },
+              onNavigate: function(direction, itemIndex) {
+                              if (window.console) {
+                                  return console.log('Navigating '+direction+'. Current item: '+itemIndex);
+                              }
+              }
+                      });
+                  });
+
+                  //Programmatically call
+                  $('#open-image').click(function (e) {
+                      e.preventDefault();
+                      $(this).ekkoLightbox();
+                  });
+                  $('#open-youtube').click(function (e) {
+                      e.preventDefault();
+                      $(this).ekkoLightbox();
+                  });
+
+          // navigateTo
+                  $(document).on('click', '[data-toggle="lightbox"][data-gallery="navigateTo"]', function(event) {
+                      event.preventDefault();
+
+                      return $(this).ekkoLightbox({
+                          onShown: function() {
+
+                this.modal().on('click', '.modal-footer a', function(e) {
+
+                  e.preventDefault();
+                  this.navigateTo(2);
+
+                              }.bind(this));
+
+                          }
+                      });
+                  });
+
+
+                  /**
+                   * Documentation specific - ignore this
+                   */
+                  anchors.options.placement = 'left';
+                  anchors.add('h3');
+                  $('code[data-code]').each(function() {
+
+                      var $code = $(this),
+                          $pair = $('div[data-code="'+$code.data('code')+'"]');
+
+                      $code.hide();
+                      var text = $code.text($pair.html()).html().trim().split("\n");
+                      var indentLength = text[text.length - 1].match(/^\s+/)
+                      indentLength = indentLength ? indentLength[0].length : 24;
+                      var indent = '';
+                      for(var i = 0; i < indentLength; i++)
+                          indent += ' ';
+                      if($code.data('trim') == 'all') {
+                          for (var i = 0; i < text.length; i++)
+                              text[i] = text[i].trim();
+                      } else  {
+                          for (var i = 0; i < text.length; i++)
+                              text[i] = text[i].replace(indent, '    ').replace('    ', '');
+                      }
+                      text = text.join("\n");
+                      $code.html(text).show();
+
+                  });
+              });
+  </script>
+</body>
+</html>
