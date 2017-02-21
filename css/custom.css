@@ -66,3 +66,14 @@ position: relative;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
    }
+
+.marketplus{
+	cursor: pointer;
+}
+.marketminus{
+	cursor: pointer;
+}
+.btn-info{
+	background-color: #03A9F4 !important
+}
+
