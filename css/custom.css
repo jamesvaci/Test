@@ -77,3 +77,8 @@ position: relative;
 	background-color: #03A9F4 !important
 }
 
+/* Fillter pure CSS start  */
+.hide{
+	display: none;
+}
+/* Fillter pure CSS end  */

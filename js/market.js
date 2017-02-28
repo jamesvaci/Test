@@ -1,4 +1,6 @@
 $(document).ready(function(){
+	var kupnam = document.getElementById('kupnam');
+	var x = document.getElementsByClassName("kupoprclass");
 	var milano65add = document.getElementById('milano65add');
 	var milano65remove = document.getElementById('milano65remove');
 	var milano65count = document.getElementById('milano65count').innerHTML;
@@ -11,6 +13,16 @@ $(document).ready(function(){
 	var milano120remove = document.getElementById('milano120remove');
 	var milano120count = document.getElementById('milano120count').innerHTML;
 	var milano120countjs = 0;
+
+	$(kupnam).click(function(){
+		$(x).fadeOut( "slow", function() {
+    // Animation complete.
+  });
+	});
+
+	$(x).click(function(){
+		alert("asd");
+	});
 
 	$(milano65add).on("click", function(){
 		milano65countjs ++;
@@ -44,4 +56,9 @@ $(document).ready(function(){
 		milano120countjs --;
 		document.getElementById("milano120count").innerHTML = milano120countjs;
 	}});
+
+	/* market js may Rick help me*/
+
+	
+
 });
