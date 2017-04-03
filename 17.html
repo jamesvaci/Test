@@ -60,7 +60,7 @@
           <a class="nav-link" href="index.htm">Pocetna <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="proizvodi.html">Proizvodi</a>
+          <a class="nav-link" href="proizvodi.htm">Proizvodi</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="referense.html">Referense</a>
@@ -75,7 +75,7 @@
           <a class="nav-link" href="akcije.html">Akcije</a>
         </li> 
         <li class="nav-item">
-          <a class="nav-link" href="kontakt.html">Kontakt</a>
+          <a class="nav-link" href="kontakt.htm">Kontakt</a>
         </li>
         </ul>
  
@@ -270,24 +270,15 @@
   <script src="Bootstrap%20Lightbox_files/anchor.js">
   </script> 
   <script type="text/javascript">
-
-
               $(document).ready(function ($) {
-
                   $(function () {
-
                     var links = $('.sidebar-links > div');
-
                     links.on('click', function () {
-
                       links.removeClass('selected');
                       $(this).addClass('selected');
-
                     });
     });
-
     // pitajte
-
     $('#exampleModal').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget)
   var recipient = button.data('whatever') 
@@ -295,9 +286,6 @@
   modal.find('.modal-title').text('New message to ' + recipient)
   modal.find('.modal-body input').val(recipient)
 })
-
-
-
                   // delegate calls to data-toggle="lightbox"
                   $(document).on('click', '[data-toggle="lightbox"]:not([data-gallery="navigateTo"])', function(event) {
                       event.preventDefault();
@@ -314,7 +302,6 @@
               }
                       });
                   });
-
                   //Programmatically call
                   $('#open-image').click(function (e) {
                       e.preventDefault();
@@ -324,36 +311,26 @@
                       e.preventDefault();
                       $(this).ekkoLightbox();
                   });
-
           // navigateTo
                   $(document).on('click', '[data-toggle="lightbox"][data-gallery="navigateTo"]', function(event) {
                       event.preventDefault();
-
                       return $(this).ekkoLightbox({
                           onShown: function() {
-
                 this.modal().on('click', '.modal-footer a', function(e) {
-
                   e.preventDefault();
                   this.navigateTo(2);
-
                               }.bind(this));
-
                           }
                       });
                   });
-
-
                   /**
                    * Documentation specific - ignore this
                    */
                   anchors.options.placement = 'left';
                   anchors.add('h3');
                   $('code[data-code]').each(function() {
-
                       var $code = $(this),
                           $pair = $('div[data-code="'+$code.data('code')+'"]');
-
                       $code.hide();
                       var text = $code.text($pair.html()).html().trim().split("\n");
                       var indentLength = text[text.length - 1].match(/^\s+/)
@@ -370,7 +347,6 @@
                       }
                       text = text.join("\n");
                       $code.html(text).show();
-
                   });
               });
   </script>
